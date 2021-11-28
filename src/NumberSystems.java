@@ -1,0 +1,59 @@
+import org.w3c.dom.ls.LSOutput;
+
+public class NumberSystems {
+    public static void main(String[] args) {
+
+
+
+
+        System.out.println(Integer.toBinaryString(5));
+        System.out.println(Integer.toOctalString(395));
+        System.out.println(Integer.toOctalString(943));
+
+ //int a = 11; // 00000000 00000000 00000000 00001011
+
+      //  System.out.println(Integer.toBinaryString(a));
+
+    // operatory bitowe
+  //  & - iloczyn bitowy
+   // \ - suma bitowa
+
+    int a = 1;
+    int b = 5; // 00000101
+        System.out.println(a << 5);
+        System.out.println(Integer.toBinaryString(a));
+       // System.out.println(Integer.toBinaryString(b));
+
+        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
+       // System.out.println(String.format("%32s", Integer.toBinaryString(b)).replace(' ', '0'));
+        System.out.println("--------------------------------");
+        System.out.println(String.format("%32s", Integer.toBinaryString(a << 5)).replace(' ', '0'));
+    }
+
+
+    // system dziesiętny 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9
+    // 154 -> 1 * 10 ^ 2 + 5 * 10 ^ 1 + 4 * 10 ^ 0 = 154
+
+    //system dw dwójkowy - 0, 1
+    // 101 -> 1 * 2 ^ 2 + 0 * 2 ^ 1 + 1 * 2 ^ 0 = 4 + 0 + 1 = 5
+
+    // zamiana z 10tnego na binarny
+
+    // 5 / 2  -> 1
+    // 2 / 2  -> 0
+    // 1 / 2  -> 1
+    //  bajt -> 00000101
+
+    // system  ósemkowy 0,1, 2, 3, 4, 5, 6, 7
+    //  47 -> 4 * 8 ^ 1  + 7 * 8 ^ 0 = 32 + 7  = 39
+    // szestnastkowy 0 1 2 3 ... 9  a b c d e f
+    // 3af -> 3 * 16 ^ 2 + a * 16 ^ 1 + f  * 16 ^ 0   = (3 * 256) + 160 + 15 = 768 + 175 =  943
+
+
+
+
+}
+
+
+
+
